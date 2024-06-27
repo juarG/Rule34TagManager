@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1029.0" style="-fx-background-color: #50623A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="apply" layoutX="119.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#handleApplySave" style="-fx-background-color: #294B29; -fx-border-color: #DBE7C9; -fx-border-radius: 5;" text="Apply" textFill="#789461" />
+      <Button fx:id="selectAll" layoutX="27.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#handleSelectAll" style="-fx-background-color: #294B29; -fx-border-color: #DBE7C9; -fx-border-radius: 5;" text="Select All" textFill="#789461" />
+      <Text fill="#dbe7c9" layoutX="334.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select all the images you want to save" wrappingWidth="339.7533760070801">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Line endX="895.0" layoutX="117.0" layoutY="79.0" startX="-100.0" stroke="#dbe7c9" />
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="17.0" layoutY="93.0" prefHeight="509.0" prefWidth="1005.0" style="-fx-background-color: transparent;">
+        <content>
+          <AnchorPane fx:id="scrollPaneContent" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #50623A;" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

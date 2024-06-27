@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1029.0" style="-fx-background-color: #50623A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="-1.0" layoutY="-7.0" prefHeight="634.0" prefWidth="179.0" style="-fx-background-color: #294B29;">
+         <children>
+            <Text fill="#dbe7c9" strokeType="OUTSIDE" strokeWidth="0.0" text="GreenGetter" textAlignment="CENTER" wrappingWidth="173.13000106811523">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="3.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="#dbe7c9" layoutX="13.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" textAlignment="CENTER" wrappingWidth="131.13000106811523">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onMouseClicked="#openAddTags" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: #789461; -fx-cursor: hand;" text="Add Tags" textFill="#dbe7c9">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="-50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="showTags" mnemonicParsing="false" onMouseClicked="#handleShowTags" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: #789461; -fx-cursor: hand;" text="Tags" textFill="#dbe7c9">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="-80.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="25.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="topImages" mnemonicParsing="false" onMouseClicked="#handleGetTop" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: #789461;" text="Top Images" textFill="#dbe7c9">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="-33.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="25.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Line endX="-153.0" endY="459.25" layoutX="331.0" layoutY="166.0" startX="-153.0" startY="-166.0" stroke="#dbe7c9" strokeWidth="3.0" />
+      <Line endX="510.0" layoutX="452.0" layoutY="123.0" startX="-208.0" stroke="#dbe7c9" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <TextField fx:id="searchText" layoutX="428.0" layoutY="57.0" onAction="#handleSeachImages" prefHeight="26.0" prefWidth="351.0" promptText="Search" style="-fx-background-color: transparent; -fx-border-color: #dbe7c9; -fx-border-radius: 6; -fx-border-width: 2; -fx-text-fill: #DBE7C9;" />
+      <Button layoutX="793.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#handleSaveNewImages" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #294B29; -fx-cursor: hand;" text="New Images" textFill="#789461">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="scrollPaneTags" layoutX="197.0" layoutY="134.0" prefHeight="480.0" prefWidth="818.0" style="-fx-background-color: #50623A; visibility: false;">
+        <content>
+          <AnchorPane fx:id="anchorPaneTags" prefHeight="516.0" prefWidth="801.0" style="-fx-background-color: #50623A; visibility: true;" />
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scrollPaneTop" layoutX="197.0" layoutY="134.0" prefHeight="480.0" prefWidth="818.0" style="-fx-background-color: #50623A; visibility: false;">
+         <content>
+            <AnchorPane fx:id="anchorPaneTop" prefHeight="516.0" prefWidth="801.0" style="-fx-background-color: #50623A; visibility: true;" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scrollPaneSaved" layoutX="197.0" layoutY="134.0" prefHeight="480.0" prefWidth="818.0" style="-fx-background-color: #50623A; visibility: false;">
+         <content>
+            <AnchorPane fx:id="anchorPaneSaved" prefHeight="516.0" prefWidth="801.0" style="-fx-background-color: #50623A; visibility: true;" />
+         </content>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets left="20.0" />
+   </padding>
+</AnchorPane>

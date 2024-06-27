@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.transparent-text-area {
+    -fx-background-color: #294B29;
+    -fx-control-inner-background: #50623A;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-text-fill: #DBE7C9;
+}
+
+.transparent-text-area .content {
+    -fx-background-color: #50623A;
+}
+
+.transparent-scroll-pane {
+    -fx-background-color: transparent;
+}

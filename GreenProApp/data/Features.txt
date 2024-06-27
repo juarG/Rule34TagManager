@@ -1,0 +1,16 @@
+Features
+
+
+1.Save the most important tags from a set of post IDs (author tags, copyright tags, frequent general tags) :YES!!
+
+2.Preview the last 100 posts with a certain tag, and allow to chose which to save :YES (but only 30, maybe add next button for more)
+
+3.Show a list of all important tags for user YES!!
+
+4.Allow user to rate each saved Image : YES!!
+
+5.Allow user to see a display of the five highest rated saved images for all important tags : YES( even 10, but it doesnt feel that useful because the rating is 1-20 only)
+
+6.Allow user to see all saved images for a specific important tag :X
+
+7.Allow user to see all comments for a specific saved Image :No (do i rlly need this ?)

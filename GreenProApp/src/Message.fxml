@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="460.0" style="-fx-background-color: #294B29;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox layoutX="10.0" layoutY="8.0" prefHeight="227.0" prefWidth="441.0">
+        <children>
+            <TextArea editable="false" prefHeight="236.0" prefWidth="441.0" styleClass="transparent-text-area" text="text" wrapText="true">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font></TextArea>
+        </children>
+    </VBox>
+</AnchorPane>

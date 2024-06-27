@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="801.0" style="-fx-background-color: #50623A; -fx-border-color: #294B29; -fx-border-width: 0 15 15 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#dbe7c9" layoutX="34.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Tags" wrappingWidth="138.42000198364258">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textAreaAddTags" layoutX="34.0" layoutY="67.0" prefHeight="239.0" prefWidth="398.0" promptText="Insert your post IDs here ( max100 )                                              ex. 23456346,4575869,5475680,6797807,09780,..." style="-fx-control-inner-background: #789461;" />
+      <Button layoutX="317.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#handleGetTags" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #294B29; -fx-border-color: transparent; -fx-cursor: hand;" text="Get Tags" textFill="#789461">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Line endX="100.0" layoutX="366.0" layoutY="26.0" startX="100.0" startY="130.6666717529297" stroke="#dbe7c9" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Line endX="100.0" endY="-55.66667175292969" layoutX="367.0" layoutY="262.0" startX="100.0" startY="93.66667175292969" stroke="#dbe7c9" strokeLineCap="ROUND" strokeWidth="3.0" />
+      <Text fill="#dbe7c9" layoutX="455.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" wrappingWidth="23.753345489501953">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#dbe7c9" layoutX="498.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select a file with the tags you want to add." wrappingWidth="261.7533760070801">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="fileStructure" layoutX="630.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#handleFileStructure" style="-fx-background-color: transparent; -fx-cursor: hand;" text="File Structure" textFill="#dbe7c9" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="filePathField" layoutX="495.0" layoutY="144.0" promptText="File path ..." style="-fx-background-color: #789461;" />
+      <Button layoutX="671.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#handleChoseFile" prefHeight="22.0" prefWidth="74.0" style="-fx-background-color: #294B29; -fx-border-color: transparent; -fx-cursor: hand;" text="Find file" textFill="#789461">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button layoutX="671.0" layoutY="189.0" mnemonicParsing="false" onMouseClicked="#handleGetTagsFile" prefHeight="22.0" prefWidth="74.0" style="-fx-background-color: #294B29; -fx-border-color: transparent; -fx-cursor: hand;" text="Get Tags" textFill="#789461">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>

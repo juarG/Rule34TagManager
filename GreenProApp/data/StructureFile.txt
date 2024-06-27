@@ -1,0 +1,9 @@
+The file name should be:
+"GeneralTags.txt" if you want to add general tags
+"ArtistTags.txt" if you want to add artist tags
+"QuestionMarkTags.txt" ....
+"CopyrightTags.txt" if you want to add copyright tags
+"CharacterTags.txt" if you want to add character tags
+"MetaTags.txt" if you want to add meta tags
+
+There should only be the tags inside the file, all of them separated by spaces (you have to guarantee a space at the end... sorry about that)
